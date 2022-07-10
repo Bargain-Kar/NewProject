@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy - Bargain Karo</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }   
+        body{
+    background-image:url("https://cdn.pixabay.com/photo/2016/11/29/12/16/buildings-1869425_960_720.jpg");
+    background-size: 100%;
+    width: 100%;
+background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+.box h1{
+    color:white;
+}
+
+     .box{
+      
+       display: block;
+       border-radius: 12px;
+        width:50%;
+margin:50px auto;
+padding: 12px;
+
+     }
+     .input-group input {
+    display:block;
+    width:100%;
+    border: 2px solid #8a8888;
+    padding:10px;  
+    border-radius: 9px; 
+    margin:12px auto;
+    height: 30px;
+    margin-top: 12px;  
+    font-size: 19px;   font-family: -webkit-body;
+     border-radius: 7px;
+      width: 50%;
+       text-align: center;
+}
+#btn{
+      background-color: #116a9e; 
+    display: block;
+     margin: 12px auto;
+     width: 39%;
+      height: 41px;
+       border-radius: 5px; 
+       border-radius: 5px; 
+       font-weight:bold; 
+       color: white;
+        font-size: 21px;
+        border: none;
+
+         height: 26px;
+}
+#btn:hover{
+    background-color: #0b85cc; 
+    border-radius: 9px;
+}
+
+    </style>
+</head>
+<body>
+    <div class = "box">
+        
+        <form action="/buy" method="post">
+            <h1 style="text-align:center ;"> Oder Your Sim card</h1>
+            <div class="input-group">
+                <input type="text" placeholder="Enter your Name" name = "name" id = "name" required >
+
+            </div>
+            <div class = "input-group">
+                <input type="email" placeholder="Enter your Email-id" name = "email" id="email" required> </div>
+            <div class="input-group">
+                <input type="phone" placeholder="Enter the Contact Number" name = "number" id="number" required > </div>
+                                            
+            <div class = "input-group">
+                <input type="text" placeholder="Enter the address" name = "address" id="address" required >  </div>
+            <div class="input-group">
+                <input type="number" placeholder="Enter the Area Pin-code" name = "pincode" id = "pin" required >  </div>
+                                  <button type="submit" id ="btn"> Buy</button>
+        </form>
+    </div>
+
+</body>
+</html>

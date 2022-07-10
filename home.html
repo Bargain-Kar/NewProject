@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARGAIN KARO</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<style>
+  *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+   --myfont:'Mulish', sans-serif;
+--my-btn-font:'Montserrat' sans-serif;
+--lg-lightcolor:linear-gradient(to left,rgba(116,235,213,0.6),rgba(159,172,230,0));
+--lg-color:linear-gradient(to left,#74ebd5,#9face6);
+
+}
+body{
+margin-top: 0px;
+  background-size: 100%;
+}
+        header{
+           margin-left: 9px;
+         border-radius: 9px;
+        background-color: #116a9e;
+        width: 99%;
+        }
+      .left{
+        margin-left: 22px;
+        display: inline-block;
+       
+      }
+      .mid{
+        display: block;
+      
+        width: 38%;
+        margin: 12px auto;
+      }
+      .right{
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right:12px;
+        
+      }
+      
+      .dropdown {
+display:inline-block;
+      }
+   
+     
+.btn a{
+  color:white;
+  text-decoration: none;
+  padding: 12px;
+}
+.btn a:hover{
+ 
+  color:#fff;
+  text-decoration: underline;
+}
+h2{
+    
+  text-align: center;
+}
+.comparision img{
+  height: 135px;
+}
+
+
+
+.card {
+  width: 350px;
+  height: 525px;
+  overflow: hidden;
+  position: relative;
+ 
+}
+.card .main-content {
+  width: 100%;
+  height: 100%;
+}
+.card .main-content img {
+  width: 88%;
+  height: 36%;
+}
+.card .overlay-content {
+  border: 2px soild red;
+border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  background-color: #6789f4;;
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  transition: 0.6s;
+  top: 0%;
+  left: 100%;
+  opacity: 0.8;
+  
+}
+.card:hover .overlay-content {
+  /* left: 0; */
+  transform: translateX(-100%);
+}
+.card .overlay-content p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.75rem;
+}
+.card .overlay-content p span {
+  display: block;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1.25rem;
+}
+.card1 {
+  width: 350px;
+  height: 525px;
+  overflow: hidden;
+  position: relative;
+ border:2px solid #f0f0f0;
+}
+.card1 .main-content1 {
+  width: 100%;
+  height: 100%;
+}
+.card1 .main-content1 img {
+  width: 88%;
+  height: 36%;
+}
+.card1 .overlay-content1 {
+  border: 2px soild red;
+border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(250, 101, 101);
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  transition: 0.6s;
+  top: 0%;
+  left: 100%;
+  opacity: 0.8;
+  
+}
+.anima h1{
+ font-size: 80px;
+font-weight: 600;
+
+}
+.card1:hover .overlay-content1 {
+  /* left: 0; */
+  transform: translateX(-100%);
+}
+.card1 .overlay-content1 p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.75rem;
+}
+.card1 .overlay-content1 p span {
+  display: block;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1.25rem;
+}
+footer{
+   
+  
+  background: linear-gradient(0deg,#3ab2ee 70%,#44c5ff 70%);
+    padding-bottom: 30px;
+  text-align: center;
+  
+}
+
+.nav-link:hover{
+text-decoration: underline;
+}
+.navbar-brand:hover{
+  text-decoration: underline;
+}
+.jio-bsnl:hover{
+  color:aliceblue;
+  font-weight: bold;
+  background-color: #116a9e;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+</style>
+</head>
+
+<body >
+
+    <header>
+        <nav>
+          
+            <div class = "left">
+              <img src = "https://i.pinimg.com/originals/71/ad/2d/71ad2dd175ee6678d25fee79670e1f88.png" style="height:38px">
+              <h3 style="color:white;font-family: Amaranth-Bold; font-weight: 900;">bargainKaro</h3>
+             <span><small style="color:white;font-family: Amaranth-Bold; font-weight: 900; margin-top: 0px;"> compare and buy</small></span> 
+            </div>
+            <div class = "mid">
+            <ul>
+                <li style="display: inline-block; margin-right: 15px; " class = "about"> 
+                    <a href="#" style="color:whitesmoke; text-decoration: none; font-weight: bold;" > ABOUT US</a>
+                </li>
+                <div class="dropdown" style="margin-right: 15px; font-weight: bold; font-weight: bold;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                     data-bs-toggle="dropdown" aria-expanded="false" style = "background-color: #116a9e;border: none; font-weight:bold ;">
+                     TRENDING OFFERS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" class = "jio-bsnl" href="https://www.jio.com/selfcare/plans/mobility/prepaid-plans-list/?category=Popular%20Plans&categoryId=UG9wdWxhciBQbGFucw==?utm_source=Couponstan" style="font-weight: bold;">JIo Trending Offer</a></li>
+                      <li><a class="dropdown-item" class = "voda-air" href="https://www.myvi.in/new-connection/buy-postpaid-sim-connection-online?utm_medium=cpc&utm_source=google&utm_adtype=Search&utm_campaign=search_brand_phrase_postpaid_vi-corp-pd_neogold_1tx-1491l&utm_adgroup=Vodafone__Generic&utm_ad=rsa&utm_device=c&utm_adposition=&utm_network=g&utm_content=aud-1085581648746:kwd-1245626686761&utm_term=plan%20for%20vodafone&gclid=Cj0KCQjwzLCVBhD3ARIsAPKYTcReapxn0uiK2wUr3W9Hb4QtBfX7d5M3PGzatpyhQIje4uhWd5by098aAqT1EALw_wcB" style="font-weight: bold;">Vodafone Special offer</a></li>
+                      <li><a class="dropdown-item" class = "voda-air" href="https://www.airtel.in/prepaid-4g-sim/?&utm_source=ps_pfx_prepaid_search&utm_medium=Brand_Non_Core_indeterminate&utm_campaign=Pfx_Airtel_Prepaid_Sim_Search_Brand_Non_Core_indeterminate_Phrase_C1_Jan22_New_Plans|2160&kwd=airtel%20mobile%20plans&cid=ps&gclsrc=aw.ds&gclid=Cj0KCQjwzLCVBhD3ARIsAPKYTcRRYhSF_v_yeX9_gX0rmdO2LkA1FEgKs0Q6s71udtTs72R0IolvJw8aAglGEALw_wcB" style="font-weight: bold;">Airtle Cheapest offer</a></li>
+                      <li><a class="dropdown-item" class = "jio-bsnl" href="https://portal.bsnl.in/myportal/cm.do" style="font-weight: bold;">BSNL GSM Bill</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                    data-bs-toggle="dropdown" aria-expanded="false" style = "background-color: #116a9e;border: none; font-weight:bold ;">
+                      MOST BOUGHT PLANS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="https://www.jio.com/selfcare/plans/mobility/prepaid-plans-list/?category=Popular%20Plans&categoryId=UG9wdWxhciBQbGFucw==?utm_source=Couponstan" style="font-weight: bold;">JIo Trending Offer</a></li>
+                      <li><a class="dropdown-item" href="https://www.myvi.in/new-connection/buy-postpaid-sim-connection-online?utm_medium=cpc&utm_source=google&utm_adtype=Search&utm_campaign=search_brand_phrase_postpaid_vi-corp-pd_neogold_1tx-1491l&utm_adgroup=Vodafone__Generic&utm_ad=rsa&utm_device=c&utm_adposition=&utm_network=g&utm_content=aud-1085581648746:kwd-1245626686761&utm_term=plan%20for%20vodafone&gclid=Cj0KCQjwzLCVBhD3ARIsAPKYTcReapxn0uiK2wUr3W9Hb4QtBfX7d5M3PGzatpyhQIje4uhWd5by098aAqT1EALw_wcB" style="font-weight: bold;">Vodafone Special offer</a></li>
+                      <li><a class="dropdown-item" href="https://www.airtel.in/prepaid-4g-sim/?&utm_source=ps_pfx_prepaid_search&utm_medium=Brand_Non_Core_indeterminate&utm_campaign=Pfx_Airtel_Prepaid_Sim_Search_Brand_Non_Core_indeterminate_Phrase_C1_Jan22_New_Plans|2160&kwd=airtel%20mobile%20plans&cid=ps&gclsrc=aw.ds&gclid=Cj0KCQjwzLCVBhD3ARIsAPKYTcRRYhSF_v_yeX9_gX0rmdO2LkA1FEgKs0Q6s71udtTs72R0IolvJw8aAglGEALw_wcB" style="font-weight: bold;">Airtle Cheapest offer</a></li>
+                      <li><a class="dropdown-item" href="https://portal.bsnl.in/myportal/cm.do" style="font-weight: bold;">BSNL GSM Bill</a></li>
+                    </ul>
+                  </div>
+            </ul>
+
+            </div>
+            <div class = "right">
+              <div class=" btn">
+                <button style="border-radius: 9px; border: none; background-color: #116a9e;"> <a href="/register" style="font-weight: bold;"> Sign Up</a></button>
+              </div>
+              <div class=" btn">
+                <button  style="border-radius: 9px; border: none; background-color: #116a9e;"> <a href="/login" style="font-weight: bold;"> Login </a></button>
+              </div>
+            </div>
+
+        </nav>
+
+    </header>
+    
+    <div class="anima">
+     <h1 style="font-family: Amaranth-Bold; margin-left: 17px;"> <span class="auto-type"></span></h1>
+      </div>
+     <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width:98%;margin-left: 9px;">
+        <div class="container-fluid" style="background-color: #116a9e; border-radius:9px;" >
+          <a class="navbar-brand" href="/getSimCard"  style="margin-right:180px; margin-left: 128px; color:white;font-weight: bold; ">Get Sim Card</a>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" 
+                data-bs-toggle="dropdown" aria-expanded="false" style = "background-color: #116a9e;border: none; margin-left:128px;font-weight:bold ;">
+                  Recharge
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+                  <li><a class="dropdown-item" href="https://www.jio.com/selfcare/recharge/mobility/"  style="font-weight: bold;">Jio</a></li>
+                  <li><a class="dropdown-item" href="https://www.myvi.in/prepaid/online-mobile-recharge"  style="font-weight: bold;">Vodafone</a></li>
+                  <li><a class="dropdown-item" href="https://www.airtel.in/recharge-online" style="font-weight: bold;">Airtel</a></li>
+                  <li><a class="dropdown-item" href="https://portal.bsnl.in/myportal/quickrecharge.do"  style="font-weight: bold;">BSNL</a></li>
+                </ul>
+              </div>
+        </ul>
+
+        </div>
+              <li class="nav-item" style="list-style: none;">
+                <a class="nav-link" href="https://www.jiosaavn.com/"  style="margin-right:352px;color:white;font-weight: bold">Music</a>
+              </li>
+              <li class="nav-item" style="list-style: none;">
+                <a class="nav-link" href="https://www.jiomart.com/?gclid=Cj0KCQjwzLCVBhD3ARIsAPKYTcSWoUa8q65lNKnwTNak_4rc3i_vh7Y9c-BbyQaSLoxpVMfhh_0SpdcaAksqEALw_wcB"  style="margin-right:50px;color:white;font-weight: bold">Shopping</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="comparision" style="display: flex; margin-left: 12px;">
+    
+        <div class="card" style=" border-radius:12px; margin-left: 44px; ">
+          <div class="main-content">
+            <img src="https://1000logos.net/wp-content/uploads/2021/07/Jio-Logo.png"   style="margin-top:10px;">
+          </div>
+          <div class="overlay-content">
+            <p>
+              <b>What is Reliance Jio?</b>
+  
+              Reliance Jio is a mobile network offering 4G internet services which Ambani contends will cover 90 per cent of India’s population by March, 2017. Ambani has set a target of “100 million customers for the Jio network”,
+               of which it is estimated that it has already acquired 2.5 million users thanks to the preview offer.
+              <span>- Mukesh Ambani -</span>
+            </p>
+          </div>
+        </div>
+        <!-- vodafone -->
+        <div class="card1" style=" border-radius:12px; margin-left: 44px;margin-top: -8px; background-color: white;">
+          <div class="main-content1">
+            <img src="https://1000logos.net/wp-content/uploads/2017/06/Vodafone-Logo-1997.jpg" style="margin-left:3px;width:101%;height:41%;margin-top:10px ;" >
+          </div>
+          <div class="overlay-content1">
+            <p>
+              <b>What is Vodafone ?</b>
+              Vodafone Group net worth as of June 14, 2022 is $42.7B. Vodafone AirTouch Plc is the world's largest international mobile communications firm.
+              <br><b> Strock Price :</b> VOD (LON)<br>
+              125.18 GBX -0.94 (-0.75%)
+              <span>- Nick Read (1 Oct 2018–) -</span>
+            </p>
+          </div>
+        </div>
+        <!-- airtel -->
+        <div class="card1" style=" border-radius:12px; margin-left: 44px; background-color: white;">
+          <div class="main-content1">
+            <img src="https://lh3.googleusercontent.com/lT-Hq8R0vSVlBqglFSemkF-mjcERBpMv1nUbRnC36G-dVtxO-JvztUC8DTmpaSe7hMjj" style="margin-left:68px;width:58%;height:39%;margin-top:14px" >
+          </div>
+          <div class="overlay-content1">
+            <p>
+              <b>What is Airtel ?</b><br>
+              Bharti Airtel Consolidated March 2022 Net Sales at Rs 31,500.30 crore, up 22.34% Y-o-Y. Reported Consolidated quarterly numbers for Bharti Airtel are: 
+              Net Sales at Rs 31,500.30 crore in March 2022 up 22.34% from Rs. 25,747.30 crore in March 2021.
+              <span>-Sunil Bharti Mittal -</span>
+            </p>
+          </div>
+        </div>
+        <!-- bsnl -->
+        <div class="card" style=" border-radius:12px; margin-left: 44px;">
+          <div class="main-content">
+            <img src="https://cdn.worldvectorlogo.com/logos/bsnl-logo.svg"  style="margin-left:-192px;width:205%;height:87%;margin-top:-168px">
+        
+          </div>
+          <div class="overlay-content">
+            <p>
+              <b>What is BSNL ?</b><br>
+              BSNL expects over Rs 17,000 cr revenue from services in FY22, a tad lower than previous fiscal, due to removal of call 
+              connect charges that used to bring in additional inflows, says Chairman PK Purwar
+              <span>- Government of India -</span>
+            </p>
+          </div>
+        </div>
+        </div>
+      <footer>
+        <div class="foot" style="color:white">
+       <h2 style="font-weight: bold;"> Why BARGAIN KARO ??</b></h2>           
+       <p style="font-weight: bold; font-size: 22px;" > There's more than one reason to sign up with confidence </p>
+       <p style=" font-size: 22px;"> <b> Bargain karo</b> is a platform in which you can get multiple Telecom services..</p>
+       <p style=" font-size: 19px;"> With the help <b> Bargain karo</b> you can get SIM cards of Multiple Telecom companies with there the all services in reasonable
+      price.. with all offers what other telecom companies Provide </p>
+      <h4> Want to konw what services you get..? From <b> bargainKaro</b></h4>
+      <ul > 
+        <li style="list-style: none;" > <a href ="Getsimcard" style=" font-weight: 500; font-size: 22px; color: white; text-decoration: none;">Get SIM Card</a></li>
+        <li  style=" font-weight: 500; font-size: 22px;list-style: none;">Recharge</li>
+        <li style="list-style: none;"> <a href ="https://www.jiosaavn.com/" style="font-weight: 500; font-size: 22px;color: white; text-decoration: none;">Listen Music</a></li>
+        <li style="list-style: none;">  <a href ="https://www.jiomart.com/?gclid=Cj0KCQjwzLCVBhD3ARIsAPKYTcSWoUa8q65lNKnwTNak_4rc3i_vh7Y9c-BbyQaSLoxpVMfhh_0SpdcaAksqEALw_wcB" style=" font-weight: 500; font-size: 22px; color: white; text-decoration: none;">Shopping</a></li>
+      </ul>
+
+        </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed = new Typed(".auto-type",{
+            strings:["bargain karo","compare and buy"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+          })
+        </script>
+
+</body>
+</html>
